@@ -1,0 +1,9 @@
+public class Strings {
+
+    public static void main(String[] args) {
+    String sc1 = "This String is ";
+        String sc2 = "Concatenated";
+        String con = sc1 + sc2; //Concatenating
+        System.out.println(con);
+      }
+}
