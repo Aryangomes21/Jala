@@ -1,0 +1,15 @@
+public class CallUsingThis {
+
+    int num;
+    String name;
+
+    CallUsingThis() {
+        this(11, "Sharan");
+    }
+
+    CallUsingThis(int num, String name) {
+        this.num = num;
+        this.name = name;
+        System.out.println(num + " " + name);
+    }
+}
