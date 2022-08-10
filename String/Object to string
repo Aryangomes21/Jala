@@ -1,0 +1,11 @@
+public class Strings {
+
+    public static void main(String[] args) {
+        
+        int is = 11;
+        //Integer.toString() method converts int to str
+        String iTs = Integer.toString(is);
+        System.out.println("Converted int to str : " + iTs + 33);
+     }
+}
+
