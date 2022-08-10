@@ -1,0 +1,10 @@
+public class CallUsingThis {
+
+    int num;
+    String name;
+
+    CallUsingThis() {
+        //3. Calling argument constructor of current class using this()
+        this(11, "Aryan");
+    }
+}
