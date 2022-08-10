@@ -1,0 +1,10 @@
+public class Strings {
+
+    public static void main(String[] args) {
+
+        String ts = "   Trimming String  ";
+        //trim method() Removes leading and trailing spaces
+        String trm = ts.trim();
+        System.out.println("Trimmed : " + trm);
+      }
+}
