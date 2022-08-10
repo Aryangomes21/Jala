@@ -1,0 +1,21 @@
+public class MethodOverloading {
+    int num1;
+    int num2;
+    int rollNo;
+    String name;
+    void method2(int rollNo) {
+        this.rollNo = rollNo;  //Integer
+        System.out.println("2.Roll number : " + rollNo);
+    }
+    void method2(int rollNo, String name) {
+        this.rollNo = rollNo; //Integer
+        this.name = name;     //String
+        System.out.println("2.Roll number : " + rollNo + " ; " + "Name : " + name);
+    }
+     public static void main(String[] args) {
+        mo.method2(123);
+        mo.method2(123, "Aryan");
+     }
+}
+    
+    
