@@ -1,0 +1,23 @@
+mport java.util.Arrays;
+
+public class DuplicateValues {
+    static void duplicateValues(int[] arr) {
+        //outer loop
+        System.out.println("Duplicate values : ");
+        for (int i = 0; i < arr.length - 1; i++) {
+            //inner loop
+            for (int j = i + 1; j < arr.length; j++) {
+                if ((arr[i] == arr[j] && (i != j))) {
+                    //prints the duplicate element
+                    System.out.print(arr[j] + " ");
+                }
+            }
+        }
+    }
+    public static void main(String[] args) {
+        int[] my_arr = {10, 20, 30, 44, 50, 20, 40, 30};
+        //printing array as string
+        System.out.println("my_arr[] = " + Arrays.toString(my_arr));
+        duplicateValues(my_arr);
+    }
+}
