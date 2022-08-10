@@ -1,0 +1,19 @@
+public interface InterfacePublicFieldsMethod {
+    int num = 111; 
+
+    public void myMethod();
+}
+
+class SIP_08 implements InterfacePublicFieldsMethod {
+    @Override
+    public void myMethod() {
+        System.out.println("This is a method");
+    }
+
+    //main method
+    public static void main(String[] args) {
+        SIP_08 j = new SIP_08();
+        System.out.println(num);
+        j.myMethod();
+    }
+}
