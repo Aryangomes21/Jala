@@ -1,0 +1,22 @@
+class Parent_06 {
+    void method1() {
+        System.out.println("Used this() and super() in methods");
+    }
+
+    void method2() {
+        this.method1();
+    }
+}
+//SubClass
+class Child_06 extends Parent_06 {
+    void method3() {
+        super.method2();
+    }
+}
+
+public class ThisSuperInMethods {
+    public static void main(String[] args) {
+        Child_06 c = new Child_06();
+        c.method3();
+    }
+}
