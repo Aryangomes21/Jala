@@ -1,0 +1,9 @@
+public class Strings {
+
+    public static void main(String[] args) {
+     String sl = "String Length";
+        //The length() method returns the value of string length including white spaces
+        int len = sl.length();
+        System.out.println("String Length : " + len);
+    }
+ }
