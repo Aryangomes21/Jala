@@ -1,0 +1,13 @@
+public class Strings {
+
+    public static void main(String[] args) {
+
+        String ss = "Splitting String";
+        //split() method breaks a given string around matches
+        String[] spl = ss.split(" "); //splits space
+
+        for (String i : spl) {
+            System.out.println("Splitted : " + i);
+        }
+    }
+}
