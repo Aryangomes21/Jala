@@ -1,0 +1,18 @@
+interface SIP_5 {
+    void sameMethod();
+}
+interface SIP_05 {
+    void sameMethod();
+}
+
+class TwoInterfaceSameMethod implements SIP_5, SIP_05 {
+    @Override
+    public void sameMethod() {
+        System.out.println("This is same method in both the interfaces");
+    }
+
+    public static void main(String[] args) {
+        TwoInterfaceSameMethod if5 = new TwoInterfaceSameMethod();
+        if5.sameMethod();
+    }
+}
