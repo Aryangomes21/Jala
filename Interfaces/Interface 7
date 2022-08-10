@@ -1,0 +1,25 @@
+interface SIP_7 {
+    void methodOne();
+}
+
+//inherited interface
+interface SIP_07 extends SIP_7 {
+    void methodTwo();
+}
+
+class InheritedInterface implements SIP_07 {
+    @Override
+    public void methodOne() {
+        System.out.println("This is first method");
+    }
+    @Override
+    public void methodTwo() {
+        System.out.println("This is second method");
+    }
+
+    public static void main(String[] args) {
+        InheritedInterface if7 = new InheritedInterface();
+        if7.methodOne();
+        if7.methodTwo();
+    }
+}
